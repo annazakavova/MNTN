@@ -1,0 +1,295 @@
+/* base styles */
+
+*, *::after, *::before{
+	padding: 0px; /* отступ внутри */
+	margin: 0px; /* отступ снаружи */
+	border: none; /* границы */
+	box-sizing: border-box; /* ширина и высота элемента */
+}
+ /* links */
+a, a:visited, a:hover{
+	color: inherit;
+	text-decoration: none; /* подчеркивание */
+}
+
+a:focus, a:active{
+	outline: none; /* граница не отображаетя */
+}
+
+/* common */
+aside, nav, footer, header, section, main{
+	display: block; /* блочный элемент */
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	font-size: inherit; /* размер шрифта */
+	font-weight: inherit; /* насышенность шрифта */
+	line-height: inherit; /* межстрочный интервал */
+}
+
+p + p{
+	margin-top: 1em; /* отступ сверху */
+}
+
+ul{
+	list-style: none; /* сброс маркеров */
+}
+
+img, svg{
+	vertical-align: top; /* для img, сброс ненужного отступа */
+	max-width: 100%; /* максимальная ширина по контейнеру */
+	height: auto; /* максимальная ширина по контейнеру */
+}
+
+input, textarea, button, select{
+	font-family: inherit;
+	font-size: inherit;
+}
+
+input::-ms-clear{
+	display: none; /* сброс "х" у кнопки */
+}
+
+button, input[type="submit"]{
+	display: block; /* в одну линию */
+	box-shadow: none; /* сброс тени */
+	background-color: transparent; /* прозрачный цвет фона */
+	background: none; /* сброс фона */
+	cursor: pointer; /* показывается курсор */
+}
+
+input:focus, input:active, button:focus,  button:active{
+	outline: none; /* граница не отображаетя */
+}
+
+button::-moz-focus-inner{
+	padding: 0; /* отступ внутри */
+	border: 0; /* границы */
+}
+
+label{
+	cursor: pointer; /* оказывается курсор */
+}
+
+legend{
+	display: block; /* блочный элемент */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*  */
+body {
+	font-family: 'Gilroy';
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: #fff;
+
+	background: url(../img/BG/BG.jpg) no-repeat;
+	background-size: 100% auto;
+	background-color:  #0B1D26;;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* HEADER */
+.header {
+	padding-top: 60px;
+}
+.header__container {
+	width: 1760px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+.header__logo {
+	font-family: 'Chronicle Display';
+	font-size: 32px;
+	line-height: 38px;
+	letter-spacing: 0.01em;
+	text-transform: capitalize;
+}
+.header__nav {
+}
+.header__nav-link {
+	display: flex;
+	justify-content: space-between;
+	font-style: normal;
+	font-weight: 700;
+}
+.header__nav-link a {
+	transition: .3s ease;
+}
+.header__nav-link a:not(:last-child) {
+	margin-right: 40px;
+}
+.header__nav-link a:hover {
+	color: #FBD784;
+}
+.header__account {
+}
+.header__account-icon {
+}
+.header__account-link {
+	line-height: 21px;
+	transition: .3s ease;
+}
+.header__account-link:hover {
+	color: #FBD784;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* INTRO */
+
+.intro {
+	max-width: 980px;
+	margin: 188px auto 0 auto;
+}
+.intro__title {
+	position: relative;
+	padding-left: 104px;
+	font-weight: 800;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	color: #FBD784;
+	margin-bottom: 32px;
+
+}
+.intro__title::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+
+	width: 72px;
+	height: 2px;
+	background-color: #FBD784;
+}
+.intro__text {
+	font-family: 'Chronicle Display';
+	font-weight: 600;
+	font-size: 88px;
+	line-height: 100px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	margin-bottom: 32px;
+}
+.intro__scroll {
+}
+.intro__link {
+	position: relative;
+	transition: .3s ease;	
+}
+.intro__link::after {
+	content: "";
+	position: absolute;
+	display: block;
+	right: -32px;
+	top: 50%;
+	width: 16px;
+	height: 24px;
+	transform: translateY(-50%);
+	background-image: url(../img/main/intro/arrow_downward_24px.svg);
+}
+.intro__link:hover {
+	color: #FBD784;
+}
+.intro__icon {
+	transition: .3s ease;
+}
+.intro__icon:hover {
+	color: #FBD784;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* INTRO */
+
+.content {
+}
+.content__container {
+	max-width: 1492px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.content__blocks {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 200px;
+}
+.content__block {
+	max-width: 632px;
+	margin-left: 150px;
+}
+.content__title {
+	position: relative;
+	padding-left: 96px;
+	font-weight: 800;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	color: #FBD784;
+	margin-bottom: 27px;
+
+}
+.content__title::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+
+	width: 72px;
+	height: 2px;
+	background-color: #FBD784;
+}
+.content__text {
+	font-family: 'Chronicle Display';
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 77px;
+	margin-bottom: 27px;
+}
+.content__text-inside {
+	line-height: 32px;
+	margin-bottom: 27px;
+}
+.content__scroll {
+	color: #FBD784;
+}
+.content__link {
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* FOOTER */
+
+.footer {
+}
+.content__container {
+}
+.footer__information {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__info {
+}
+.header__logo {
+	margin-bottom: 24px;
+}
+.footer__text {
+	margin-bottom: 122px;
+}
+.footer__copy {
+}
+.footer__menu {
+}
+.footer__menu-text {
+}
+.footer__more {
+}
+.footer__more-text {
+}
