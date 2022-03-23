@@ -12,21 +12,42 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__container">
+		<div class="container">
 			<div class="header__menu">
 				<div class="header__logo">MNTN</div>
 				<div class="header__nav">
-					<div  class="header__nav-link">
+					<nav  class="header__nav-link">
 						<a href="#">Equipment</a>
 						<a href="#">About us</a>
 						<a href="#">Blog</a>
-					</div>
+					</nav>
 				</div>
 				<div class="header__account">
 					<a href="#" class="header__account-icon">
 						<img src="img/header/cart.svg" alt="account-icon">
 					</a>
 					<a href="#" class="header__account-link">Account</a>
+				</div>
+				<button class="nav__burger nav__burger-close">
+					<span class="nav__burger-icon"></span>
+				</button>
+
+				<div class="mobile__nav mobile__nav-active">
+					<div class="header__nav">
+						<nav  class="header__nav-link">
+							<ul>
+								<li><a href="#">Equipment</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__account">
+						<a href="#" class="header__account-icon">
+							<img src="img/header/cart.svg" alt="account-icon">
+						</a>
+						<a href="#" class="header__account-link">Account</a>
+					</div>
 				</div>
 			</div>
 			<section class="intro">
@@ -36,6 +57,9 @@
 					<a href="#" class="intro__link">scroll down</a>
 				</div>
 			</section>
+		</div>
+		<div class="img__bg">
+			<img src="../MNTN/img/BG/BG.jpg" alt="img__bg">
 		</div>
 	</header>
 
@@ -94,7 +118,7 @@
 		<div class="content__container">
 			<div class="footer__information">
 				<div class="footer__info">
-					<div class="header__logo">MNTN</div>
+					<div class="footer__logo">MNTN</div>
 					<div class="footer__text">Get out there & discover your next slope, mountain & destination!</div>
 					<div class="footer__copy">Copyright 2019 MNTN, Inc. Terms & Privacy</div>
 				</div>
@@ -121,5 +145,6 @@
 			</div>
 		</div>
 	</footer>	
+	<script src="js/main.js"></script>
 </body>
 </html>
